@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>个人</title>
+		<link rel="icon" href="images/favicon.ico">
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/zerogrid.css" >
+		<link rel="stylesheet" href="css/camera.css">
+		<link rel="stylesheet" href="css/form.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-migrate-1.1.1.js"></script>
+		<script src="js/forms.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/jquery.equalheights.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/tms-0.4.1.js"></script>
+		<script src="js/css3-mediaqueries.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.slider_wrapper')._TMS({
+					show:0,
+					pauseOnHover:false,
+					prevBu:'.prev',
+					nextBu:'.next',
+					playBu:false,
+					duration:800,
+					preset:'fade',
+					pagination:true,
+					pagNums:false,
+					slideshow:8000,
+					numStatus:false,
+					banners: 'fade',
+					waitBannerAnimation:false,
+					progressBar:false
+				});
+			});
+			$(document).ready(function(){
+				!function(){
+			var map=[]
+			 ,names=[]
+			 ,win=$(window)
+			 ,header=$('header')
+			 ,currClass
+			$('.content').each(function(n){
+			 map[n]=this.offsetTop
+			 names[n]=$(this).attr('id')
+			})
+			win
+			 .on('scroll',function(){
+				var i=0
+				while(map[i++]<=win.scrollTop());
+				if(currClass!==names[i-2])
+				currClass=names[i-2]
+				header.removeAttr("class").addClass(names[i-2])
+			 })
+			}(); });
+					function goToByScroll(id){
+				$('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
+				}
+				$(document).ready(function(){
+					$().UItoTop({ easingType: 'easeOutQuart' });
+				});
+		</script>	
+	</head>
+	<body class="">
+<!--==============================header=================================-->
+		<header class="page1">
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<div class="menu_block">
+							<nav class="">
+								<ul class="sf-menu">
+									<li class="current men"><a onClick="goToByScroll('page1'); return false;" href="#">Home </a> <strong class="hover"></strong></li>
+									<li class="men1"><a onClick="goToByScroll('page2'); return false;" href="#">About</a><strong class="hover"></strong></li>
+									<li class=" men2"><a onClick="goToByScroll('page3'); return false;" href="#">Poetry</a> <strong class="hover"></strong></li>
+									<li class=" men3"><a onClick="goToByScroll('page4'); return false;" href="#">School</a> <strong class="hover"></strong></li>
+									<li class=" men4"><a onClick="goToByScroll('page5'); return false;" href="#">Thanks</a> <strong class="hover"></strong></li>
+								</ul>
+							</nav>
+							<div class="clear"></div>
+						</div>
+						<h1><a href="#" onClick="goToByScroll('page1'); return false;"><img src="images/logo.png" alt="Gerald Harris attorney at law"></a></h1>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</header>
+<!--=======content================================-->
+		<div id="page1" class="content">
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<div class="slider_wrapper">
+							<ul class="items">
+								<li>
+									<img src="images/spacer.gif">
+									<div class="caption banner">
+										<h2>Welcome to my Website</h2>
+									</div>
+								</li>
+								<li>
+									<img src="images/spacer.gif">
+									<div class="caption banner">
+										<h2>有朋自远方来,不亦乐乎!</h2>
+									</div>
+								</li>
+								<li>
+									<img src="images/spacer.gif">
+									<div class="caption banner">
+										<h2>你将看到的是我的个人介绍。</h2>
+									</div>
+								</li>
+								<li>
+									<img src="images/spacer.gif">
+									<div class="caption banner">
+										<h2>内容丰富精彩不容错过！</h2>
+									</div>
+								</li>
+							</ul>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page2" class="content">
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<div class="slogan">
+						  <h3>个人简介 </h3>
+							<div class="text1" align="center">
+								<p>
+									请点击图标进行浏览
+									<div class="socials">
+										<ul class="father">
+											<li class="list"><a href="QQhtml/QQ.html"><img src="images/QQ.png"></a></li>
+											<li class="list"><a href="VX.html"><img src="images/微信.png"></a></li>
+											<li class="list"><a href="抖音html/抖音.html"><img src="images/抖音.png"></a></li>
+											<li class="list"><a href="iPhone.html"><img src="images/电话.png"></a></li>
+										</ul>																																								
+									</div>
+								</p>			
+							</div>							
+                        </div>
+                   </div>
+				</div>
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div class="box maxheight">
+							<img src="images/1.jpg">
+							<div class="text1"><a href="canteen.html">年轻酷爱生活</a></div>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div class="box maxheight">
+							<img src="images/2.jpg">
+							<div class="text1"><a href="canteen.html">努力拼搏向上</a></div> 
+						</div>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div class="box maxheight">
+							<img src="images/3.jpg">
+							<div class="text1"><a href="canteen.html">阳光热情洒脱</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div class="box maxheight">
+							<img src="images/4.jpg">
+							<div class="text1"><a href="canteen.html">坚强独立自信</a></div>
+						</div>
+					</div>
+				</div>
+				<div>注：上图点击文字观看效果更佳</div>
+				<div class="col-full">
+					<div class="wrap-col">
+						<div class="slogan">
+							<h3> <a onClick="goToByScroll('page3'); return false;" href="#"><span>诗句欣赏</span></a>  <a onClick="goToByScroll('page4'); return false;" href="#"><em>学校环境</em></a></h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page3" class="content">
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<div class="slogan">
+							<h3>Poetry</h3>
+							<div class="text1">
+								一种以有节奏的、形象生动的语言，高度凝练和集中地反映生活或抒发强烈的感情的文<br>学作品。
+								诗一定是杰作，再不就是绝无存在价值的东西,诗是会呼吸的思想，会焚烧的字。
+							</div>			
+						</div>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div class="box maxheight1">
+							<img src="images/5.jpg" title="雨过天晴云破处，这般颜色做将来。">
+							<div class="text1"><a href="https://baike.baidu.com/item/%E4%BA%94%E6%9D%82%E4%BF%8E/1302681?fr=aladdin" target="_blank">《五杂俎》</a></div>雨过天晴云破处，<br>
+							这般颜色做将来。
+						</div>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div class="box maxheight1">
+							<img src="images/6.jpg" title="慢品人间烟火色，闲观万事岁月长。">
+							<div class="text1"><a href="https://zhidao.baidu.com/question/927426997716510939.html" target="_blank">《四春游》</a></div>慢品人间烟火色，<br>
+							闲观万事岁月长。
+						</div>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div class="box maxheight1">
+							<img src="images/7.jpg" title="醉后不知天在水，满船清梦压星河。">
+							<div class="text1"><a href="https://baike.baidu.com/item/%E9%A2%98%E9%BE%99%E9%98%B3%E5%8E%BF%E9%9D%92%E8%8D%89%E6%B9%96/1120158?fr=aladdin" target="_blank">《题龙阳县青草湖》</a></div>醉后不知天在水，<br>
+							满船清梦压星河。
+						</div>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="wrap-col">
+						<div class="box maxheight1">
+							<img src="images/8.jpg" title="繁花似锦觅安宁，淡云流水度此生。">
+							<div class="text1"><a href="https://zhidao.baidu.com/question/1547237300770500187.html" target="_blank">《风蝶令.惊鸿起》</a></div>繁花似锦觅安宁，<br>
+							淡云流水度此生。
+						</div>
+					</div>
+				</div>				
+			</div>
+			<div><h3><a href="切换效果.html">点击这里观看效果更佳哟！</a></h3></div>
+		</div>
+		<div id="page4" class="content">
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<h3>My School</h3>
+					</div>
+				</div>
+				<div class="companies">
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="images/9.jpg" title="校园食堂">
+							<div class="text1">食堂</div>干饭人，干饭魂，干饭都是人上人！
+							<br>
+							<a href="myschool.html">Go to</a>
+						</div>
+					</div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="images/10.jpg" title="学校正门">
+							<div class="text1">学校正门</div>风里雨里，川轻化等你！
+							<br>
+							<a href="myschool.html">Go to</a>
+						</div>
+					</div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="images/11.jpg" title="喷泉彩灯">
+							<div class="text1">喷泉彩灯</div>喷泉闪着五彩的光，令人眼花缭乱。
+							<br>
+							<a href="myschool.html">Go to</a>
+						</div>
+					</div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="images/12.jpg" title="教学楼">
+							<div class="text1">教学楼</div>高大的教学楼就像巨人一般
+							<br>
+							<a href="myschool.html">Go to</a>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="images/13.jpg" title="校园晚霞">
+							<div class="text1">校园晚霞</div>晚霞更加迷人，如诗如画，就像到了人间仙境，令人心旷神怡。
+							<br>
+							<a href="myschool.html">Go to</a>
+						</div>
+					</div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="images/14.jpg" title="宿舍环境">
+							<div class="text1">宿舍环境</div>心灵因情感的真诚而美丽，居室因调和的氛围而温馨。
+							<br>
+							<a href="myschool.html">Go to</a>
+						</div>
+					</div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="images/15.jpg" title="体育运动">
+							<div class="text1">体育运动</div>锻炼身体，增强体质，青春似火，超越自我，放飞梦想。
+							<br>
+							<a href="myschool.html">Go to</a>
+						</div>
+					</div>
+					<div class="col-1-4">
+						<div class="wrap-col">
+							<img src="images/16.jpg" title="校园操场">
+							<div class="text1">校园操场</div>操场上充满了欢笑，映入眼帘的还是那鲜红的跑道。
+							<br>
+							<a href="myschool.html">Go to</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page5" class="content">
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<div class="slogan">
+							<h3>Thank you very much for watching</h3>
+							<div class="text1">
+								谢谢观看！
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="fengchebox">
+				    <!-- 风车 存放风车的扇叶-->
+				    <div>
+				        <!-- 四个扇叶，采用旋转方式实现8片的效果 -->
+				        <span></span>
+				        <span></span>
+				        <span></span>
+				        <span></span>
+				    </div>
+				</div>
+				<div class="control">
+				    <!-- 风扇 -->
+				    <div class="fan">
+				        <!-- 头部 -->
+				        <div class="h">
+				            <!-- 扇叶组合 -->
+				            <section class="blades">
+				                <!-- 扇叶 -->
+				                <div class="blade" style="--i:1;--color: #fd79a8;"></div>
+				                <div class="blade" style="--i:2;--color: #fdcb6e;"></div>
+				                <div class="blade" style="--i:3;--color: #BDC581;"></div>
+				                <!-- 扇叶中心logo区域 -->
+				                <div class="logo"></div>
+				            </section>
+				        </div>
+				        <!-- 支架 -->
+				        <div class="body"></div>
+				        <!-- 底座 -->
+				        <div class="base"></div>
+				    </div>
+				</div>
+				<div class="clear"></div>
+            </div>
+		</div>
+<!--==============================footer=================================-->
+		<footer>
+			<div class="zerogrid">
+				<div class="col-full">
+					<div class="wrap-col">
+						<div class="copy">
+							内容有真有假，切勿全信！
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</footer>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的学校</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            height: 90vh;
+            justify-content: center;
+			background-image: url(images/school网页背景.jpg);
+        }
+        #expanding-cards {
+            display: flex;
+            width: 80vw;
+        }
+
+        label {
+            height: 80vh;
+            flex: 0.5;
+            margin: 10px;
+            border-radius: 60px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: all 0.7s ease-in;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        input:checked+label {
+            flex: 5;
+        }
+
+        label:nth-of-type(1) {
+            background-image: url(images/9.jpg);
+        }
+
+        label:nth-of-type(2) {
+            background-image: url(images/10.jpg);
+        }
+
+        label:nth-of-type(3) {
+            background-image: url(images/11.jpg);
+        }
+
+        label:nth-of-type(4) {
+            color: orange;
+            background-image: url(images/12.jpg);
+        }
+
+        label:nth-of-type(5) {
+            background-image: url(images/13.jpg);
+        }
+		label:nth-of-type(6) {
+		    background-image: url(images/14.jpg);
+		}
+		label:nth-of-type(7) {
+		    background-image: url(images/15.jpg);
+		}
+		label:nth-of-type(8) {
+		    background-image: url(images/16.jpg);
+		}
+    </style>
+</head>
+
+<body>
+    <div id="expanding-cards">
+        <input type="radio" name="select" id="active1" checked />
+        <label for="active1"></label>
+        <input type="radio" name="select" id="active2" />
+        <label for="active2"></label>
+        <input type="radio" name="select" id="active3" />
+        <label for="active3"></label>
+        <input type="radio" name="select" id="active4" />
+        <label for="active4"></label>
+        <input type="radio" name="select" id="active5" />
+        <label for="active5"></label>
+		<input type="radio" name="select" id="active6" />
+		<label for="active6"></label>
+		<input type="radio" name="select" id="active7" />
+		<label for="active7"></label>
+		<input type="radio" name="select" id="active8" />
+		<label for="active8"></label>
+    </div>
+</body>
+
+</html>

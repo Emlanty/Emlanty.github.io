@@ -1,0 +1,120 @@
+html,body{
+	height: 100%;
+	overflow-x: hidden;
+	position: relative;
+	background-image: url(images/bac.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+*{
+	margin: 0;
+	padding: 0;
+	}
+.maindiv
+{
+	width: 500px;
+	height: 600px;
+	box-shadow: 4px 8px 4px dimgray;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:1%;
+	position: relative;
+	border-radius: 10px;
+	background-image: url(images/5.jpg);
+	background-size: 100% 100%; 
+	background-repeat: no-repeat;
+}
+ul
+{
+	width: 100%;
+	height: 20px;
+	margin-top:620px;
+	float: left;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+li
+{
+	list-style-type: none;
+	float: left;
+	height:50px;
+	text-align: center;
+	width:160px;
+}
+li>a{
+	display: block;
+	width:150px;
+	height: 20px;
+	margin-top: 15px;
+	margin-left: 5px;
+	border: 2px solid black;
+	color:black;
+	text-decoration: none;
+	line-height: 20px;
+	border-radius: 7px;
+	box-shadow: 4px 4px 4px dimgray;
+	}
+img{
+	width: 100%;
+	height: 100%;
+	}
+.change1
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display: none;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.change2
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display: none;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.change3
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display: none;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.change4
+{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display: none;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+li:hover .change1{display: block;}
+li:hover .change2{display: block;}
+li:hover .change3{display: block;}
+li:hover .change4{display: block;}
+
+li:hover {
+	border-color: red;
+	}
+li:hover a{
+	color: skyblue;
+	font-size: 18px;
+	font-weight: bolder;
+	border-color: deepskyblue;
+	}
